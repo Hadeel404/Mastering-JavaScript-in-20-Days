@@ -1,16 +1,12 @@
-# Day 2: 
+# Day 5: 
 
-This README file summarizes the JavaScript lesson on .
-mmmmmmm .
+This README file summarizes the JavaScript lesson on Data Fetching & Promises, Destructuring Data, Async, Modules, Wrapping up.
 
 ## Lesson Summary
 
-In this lesson, we explored mm in JavaScript. Here are the key points covered:
+Here are the key points covered:
 
-- mm is the process of moving variable and function declarations to the top of their scope.
-- Variable declarations are hoisted but not their assignments. They are accessible but have an initial value of `undefined`.
-- Function declarations are also hoisted, allowing them to be called before they are defined.
-- Hoisting does not apply to function expressions, arrow functions, or variables declared with `let` or `const`.
+- 
 
 ## Coding Examples
 
@@ -22,12 +18,4 @@ In this lesson, we explored mm in JavaScript. Here are the key points covered:
 
 ## Coding Exercises
 
-### [mm](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-algorithm-scripting/factorialize-a-number)
-
-#### My Solution
-
-
-```javascript
-
-
-```
+### [Build a Rick & Morty characters list	]()
