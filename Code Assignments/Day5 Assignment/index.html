@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alive Character's List</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="wrrapper">
+    <h1>Hadeel's Alive Character List: </h1>
+    <ul id="characterList"></ul> 
+ </div>
+
+  <script>
+
+    // Select the element where the character names will be displayed
+    const characterList = document.getElementById("characterList");
+
+    // Function to fetch characters and display only the characters with 'alive' character status
+    async function displayCharacters() {
+    try {
+        // fetching the characters with filtering the data to the ones with the alive status the query parameter status=alive :
+        const res = await fetch("https://rickandmortyapi.com/api/character?status=alive");
+        const data = await res.json();
+
+        // only display 50 characters if the num of characters> 50 , by only displying the first 50 :
+        const characters = data.results.slice(0, 50);
+
+        // Making sure that the is character list Clear :
+        characterList.innerHTML = "";
+
+        // Iterate through the characters and display their details as required in the discribtion :
+        characters.forEach((character) => {
+        const { name, image, location, species, gender, status } = character;
+
+        // Create <li> element for each character:
+        const li = document.createElement("li");
+        li.innerHTML = `
+            <div class = "container">
+                <img class = "img" src="${image}" alt="this is an image of : ${name}">
+                <div class = "details">
+                    <h3>${name}</h3>
+                    <p>Location: ${location.name}</br>
+                    Species: ${species}</br>
+                    Gender: ${gender} </br>
+                </div>
+            </div>
+        `;
+
+        // Append the <li> element to the character list
+        characterList.appendChild(li);
+        });
+
+    } catch (error) {
+        // Display error message to Handle any potential errors that might occur during the API req:
+        characterList.innerHTML = "Error retrieving characters.";
+        console.error(error);
+    }
+    }
+
+
+
+    // Calling the displayCharacters function to fetch and display the characters :
+    displayCharacters();
+
+    //my notes: 
+    // if it was for me i would have used the function filter in order to flter the 
+    // list based on "alive status" but nice to learn the query parameter status=alive "much easier!"
+    
+  </script>
+
+
+
+</body>
+</html>
