@@ -6,6 +6,7 @@ This README file summarizes OOP in JS.
 Here are the key points covered:
 
 -Objects : store functions with their associated data.
+
 -Using the prototype chain: Store the increment function in just one object and have the interpreter.
 
 ## coding Example: 
