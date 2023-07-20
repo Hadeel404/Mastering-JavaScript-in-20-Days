@@ -1,78 +1,41 @@
-# Day 1: INTRO, DOM, VALUES & DATA TYPES, OPERATORS.
+# Day 1: INTRO, Types.
 
-This README file summarizes an introduction to JavaScript lesson on DOM, Values & Data Types,Operators. 
+This README file summarizes an introduction to JavaScript lesson types with an introduction. 
 
 ## Lesson Summary
 Here are the key points covered:
 
--The DOM (Document Object Model) is an API that represents and interacts with any HTML or XML document. The DOM is a document model loaded in the browser and representing the document as a node tree
-- Values are chuncks of information that we want to work with.
-- Function declarations are also hoisted, allowing them to be called before they are defined.
-- Hoisting does not apply to function expressions, arrow functions, or variables declared with `let` or `const`.
+### Intro :
+-The importance of reading JS specifications (source of authority), Example:
+![](./images/plusPlus.png)
+in the code example above, if an error occured during compilation, then the reason must be the lack of understanding the language in depth, since the ++ op doesn't equal +1.
+- best deffinition for bugs : 
+![](./images/bugs.png) 
+getify laws #17
 
-## Coding Examples
-On DOM:
+##### Course Pillars :
+-Types
+-Scope
+-Objects
 
+### Types: 
+- Fact : not everything in JS is an object, in fact in JS specification it tells us that there are primitive types(like : undefined, string, number, boolean, object).
+![](./images/primitiveTypes.png) 
+-In JS values have types not variables.
+- undeclared means a variable that has never been created, undefined means there's a variable but it doesn't have a value yet, uninitialized is a variable that hasn't been initialized like block scope ones.
+- NaN : indecates an invalid number
+- isNaN() tells if the given arguemnt possess the NaN value or not
+- JS has a -0 which = to 0, but in other cases js has another opinion:
+ex:
 ```javascript
-
-// to get the type of a value (var)
-document.title
-// the body element:
-document.body
-document.body.children //all the elements within the body
-// getting elements :
-document.getElementsByClassName // by the class name
-document.getElementById("p1-name") // by id name
-
-```
-On values and operators :
-strings, numbers, boolean, undefined, null, others : arrays, objects.
-
-```javascript
-
-// strings contain characters
-// string functions:
-"ALOHA".includes("HA") // checking if it includes "ha"
-"ALOHA".length //to get the length of a string
-```
-On operators :
-mathematic & comparison opperators
-```javascript
-
-// ex1:
-1+1 = 2
-//ex2:
-2>4
+0 === -0 //true
+Object.is(-0,0); // false (ask about it Hadeel !)
 ```
 ## Coding Exercises
 
-### [Compound Assignment With Augmented Multiplication](https://docs.google.com/spreadsheets/d/1p4cv-Ni5WZ1rd21IZh0ip9BxJRYm7uLl5tbf08oQwmw/edit#gid=0&range=E9)
+### [SECTION'S EXERCISES](https://github.com/orjwan-alrajaby/gsg-expressjs-backend-training-2023/blob/main/learning-sprint-1/week3-day1-tasks/tasks.md)
 
 #### My Solution
 ```javascript
-let a = 5;
-let b = 12;
-let c = 4.6;
-
-// Only change code below this line
-a *= 5;
-b *= 3 ;
-c *=  10;
+// in file Code Exercises/Day1_Assignments
 ```
-### [Concatenating Strings with the Plus Equals Operator](https://docs.google.com/spreadsheets/d/1p4cv-Ni5WZ1rd21IZh0ip9BxJRYm7uLl5tbf08oQwmw/edit#gid=0&range=E10)
-
-#### My Solution
-```javascript
-let myStr="This is the first sentence.";
-myStr += " This is the second sentence."
-```
-### [Use Bracket Notation to Find the Nth-to-Last Character in a String](https://docs.google.com/spreadsheets/d/1p4cv-Ni5WZ1rd21IZh0ip9BxJRYm7uLl5tbf08oQwmw/edit#gid=0&range=E11:E12)
-
-#### My Solution
-```javascript
-var lastName = "Lovelace";
-
-// Only change code below this line
-var secondToLastLetterOfLastName = lastName[lastName.length - 2];
-```
-
