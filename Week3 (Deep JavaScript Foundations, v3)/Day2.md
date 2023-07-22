@@ -5,7 +5,7 @@ This README file summarizes Static Typing & scope in javaScript .
 ## Lesson Summary
 Here are the key points covered:
 
-### Static Typing
+### *Static Typing*
   TypeScript, Flow, and type-aware linting:
 #### Benefits:
 1. Catch type-related mistakes
@@ -26,11 +26,24 @@ txt = {changeTXT:"nope"};  // Error: can`t assign object to string
 ![](./images/)
 
 
-### Scops: 
+### *Scops*: 
 - units of scope in Js are : functions and blocks.
 - shadowing: when two varibles have the same name but with different scopes. 
 
 
+### Strict mode : 
+Strict mode is a feature in JavaScript that enforces a stricter set of rules during code execution, catching certain errors and preventing the use of certain unsafe practices. It helps improve code quality, enhances security, and avoids common pitfalls in JavaScript programming.
+
+```javascript
+function withStrictMode() {
+  'use strict';
+  y = 20; // This will throw a ReferenceError (implicit declaration not allowed in strict mode)
+  return y;
+}
+
+console.log(withStrictMode()); // Throws ReferenceError: y is not defined
+
+```
 
 ## Coding Exercises
 
