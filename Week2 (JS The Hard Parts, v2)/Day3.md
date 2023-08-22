@@ -19,6 +19,7 @@ JS uses an event loop, to check whether the call stack is empty or not in order 
 
 here, fetch initiates a new object (promise object) that holds the returned data from the network request, saves it in "value" on completion,
 
+
 .then : is a method that holds the display function, in which is saved in "onFullfiled".
 
 ![](./images/promises%20example.png)
