@@ -5,9 +5,9 @@ This README file summarizes OOP in JS.
 ## Lesson Summary
 Here are the key points covered:
 
--Objects : store functions with their associated data.
+- Objects : store functions with their associated data.
 
--Using the prototype chain: Store the increment function in just one object and have the interpreter.
+- Using the prototype chain: Store the increment function in just one object and have the interpreter.
 
 ## coding Example: 
 
