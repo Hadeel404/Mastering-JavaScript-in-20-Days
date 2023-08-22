@@ -7,17 +7,23 @@ Here are the key points covered:
 
 - Important JS princibles, like DRY (Don't repeat yourself).
 - Excution Context, which as the following image shows, has 2 parts : Thread of Excution, Memory.
+
 ![](./images/Excution%20context.png)
+
 - Call stack, which keeps track of what function is currently running.
 - Functions in JS  are actually treated like objects.
 - Callbacks & Higher order functios: where the outer function that takes in or passes out a function is the higher order function, and the function we insert in is our callback function, as clarifies the example below:
+  
 ![](./images/callback.png)
+
 - Arrow Functions : improve legibility of code.
 
 the images below shows how to turn a function into an arrow function :
+
 ![](./images/arrow%20functions.png)
 
 and there the callback function can be passed as an arrow function :
+
 ![](./images/arrow%20functions2.png)
 
 ## Coding Exercises
